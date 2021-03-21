@@ -1,0 +1,32 @@
+﻿<html>
+<head>
+  <meta charset="utf-8">
+  <title>Universal Plotting Sheet</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+  <header id="header">
+    <div>
+      <label for="ctrLat">Central Latitude:</label> <input id="ctrLat" type="text" placeholder="00° N" size="5">
+      <label for="ctrLon">Central Longitude:</label> <input id="ctrLon" type="text" placeholder="000° W" size="6">
+    </div>
+    <div>
+      <label for="a">a =</label> <input id="a" type="text" placeholder="0.0'" size="5">
+      <select id="aDir">
+          <option value="T">T</option>
+          <option value="A">A</option>
+      </select>
+      <label for="Zn">Zn =</label> <input id="Zn" type="text" placeholder="000°" size="4">
+      <label for="aLat">a-Lat =</label> <input id="aLat" type="text" placeholder="00° N" size="5">
+      <label for="aLon">a-Lon =</label> <input id="aLon" type="text" placeholder="000° 00.0' W" size="12">
+      <input id="addLOPBtn" type="button" value="Add LOP">
+    </div>
+  </header>
+  <canvas id="sheet"></canvas>
+  <footer id="footer">
+    <div id="coords">00° 00.0’ N, 000° 00.0’ W</div>
+    <a id="help" href="help" target="_blank">Help</a>
+  </footer>
+</body>
+</html>
